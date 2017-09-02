@@ -14,9 +14,9 @@
                 <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;"
                     Width="50" Height="50" Background="Transparent" Click="HamburgerButton_Click"/>
                 <StackPanel Orientation="Horizontal">
-                    <Button x:Name="Cadastro" FontFamily="Segoe MDL2 Assets" Content="&#xE8FA;"
-                    Width="50" Height="50" Background="Transparent" Click="Cadastro_Click" />
-                    <TextBlock Text="Cadastro" FontSize="18" VerticalAlignment="Center" />
+                    <Button x:Name="Cadastro" FontFamily="Segoe MDL2 Assets" Content="&#xE1A6;"
+                    Width="50" Height="50" Background="Transparent" Click="Detalhes_Click" />
+                    <TextBlock Text="Detalhes" FontSize="18" VerticalAlignment="Center" />
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Button x:Name="listUsers" FontFamily="Segoe MDL2 Assets" Content="&#xE125;"
@@ -33,7 +33,8 @@
         <SplitView.Content>
             <Grid>
                 <TextBlock Name="wellcome"></TextBlock>
-            </Grid>
+                <Frame x:Name="contentFrame"/>
+            </Grid>            
         </SplitView.Content>
     </SplitView>
 </Page>

@@ -10,5 +10,7 @@ namespace Trabalho_wp7_2
     public class LoginManager
     {
         public static ObservableCollection<User> Users = new ObservableCollection<User>();
+
+        public static User currentUser = null;
     }
 }

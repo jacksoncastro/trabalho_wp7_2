@@ -30,9 +30,9 @@ namespace Trabalho_wp7_2
         }
 
 
-        private void Cadastro_Click(object sender, RoutedEventArgs e)
+        private void Detalhes_Click(object sender, RoutedEventArgs e)
         {
-
+            contentFrame.Navigate(typeof(Detail));
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -41,12 +41,14 @@ namespace Trabalho_wp7_2
 
             this.user = e.Parameter as User;
 
+            LoginManager.currentUser = user;
+
             wellcome.Text = String.Format("Bem vindo {0}", user.Name);
         }
 
         private void listUsers_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(ListUsers));
+            contentFrame.Navigate(typeof(ListUsers));
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
