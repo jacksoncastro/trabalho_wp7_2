@@ -14,19 +14,19 @@
                 <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;"
                     Width="50" Height="50" Background="Transparent" Click="HamburgerButton_Click"/>
                 <StackPanel Orientation="Horizontal">
-                    <Button x:Name="Cadastro" FontFamily="Segoe MDL2 Assets" Content="&#xE13D;"
+                    <Button x:Name="Cadastro" FontFamily="Segoe MDL2 Assets" Content="&#xE8FA;"
                     Width="50" Height="50" Background="Transparent" Click="Cadastro_Click" />
                     <TextBlock Text="Cadastro" FontSize="18" VerticalAlignment="Center" />
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <Button x:Name="MenuButton2" FontFamily="Segoe MDL2 Assets" Content="&#xE10F;"
-                        Width="50" Height="50" Background="Transparent"/>
-                    <TextBlock Text="Button 2" FontSize="18" VerticalAlignment="Center" />
+                    <Button x:Name="listUsers" FontFamily="Segoe MDL2 Assets" Content="&#xE125;"
+                        Width="50" Height="50" Background="Transparent" Click="listUsers_Click"/>
+                    <TextBlock Text="Usuários" FontSize="18" VerticalAlignment="Center" />
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <Button x:Name="MenuButton3" FontFamily="Segoe MDL2 Assets" Content="&#xE1D6;"
-                        Width="50" Height="50" Background="Transparent"/>
-                    <TextBlock Text="Button 3" FontSize="18" VerticalAlignment="Center" />
+                    <Button x:Name="Exit" FontFamily="Segoe MDL2 Assets" Content="&#xE7A7;"
+                        Width="50" Height="50" Background="Transparent" Click="Exit_Click"/>
+                    <TextBlock Text="Sair" FontSize="18" VerticalAlignment="Center" />
                 </StackPanel>
             </StackPanel>
         </SplitView.Pane>

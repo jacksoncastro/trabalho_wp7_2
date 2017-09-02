@@ -43,5 +43,15 @@ namespace Trabalho_wp7_2
 
             wellcome.Text = String.Format("Bem vindo {0}", user.Name);
         }
+
+        private void listUsers_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ListUsers));
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Login));
+        }
     }
 }
