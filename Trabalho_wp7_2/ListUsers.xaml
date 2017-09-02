@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ListView x:Name="usersListView" ItemsSource="{x:Bind Users}">
+        <ListView x:Name="usersListView" ItemsSource="{x:Bind Users}" IsItemClickEnabled="True" ItemClick="usersListView_ItemClick">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="local:User" >
                     <StackPanel Orientation="Horizontal">
