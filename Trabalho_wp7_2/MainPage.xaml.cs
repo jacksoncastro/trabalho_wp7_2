@@ -55,5 +55,10 @@ namespace Trabalho_wp7_2
         {
             this.Frame.Navigate(typeof(Login));
         }
+
+        private void Assistir_Click(object sender, RoutedEventArgs e)
+        {
+            contentFrame.Navigate(typeof(VideoLearn));
+        }
     }
 }

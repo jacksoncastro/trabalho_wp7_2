@@ -66,7 +66,7 @@ namespace Trabalho_wp7_2
                     // Quando a pilha de navegação não for restaurada, navegar para a primeira página,
                     // configurando a nova página passando as informações necessárias como um parâmetro
                     // parâmetro
-                    rootFrame.Navigate(typeof(VideoLearn), e.Arguments);
+                    rootFrame.Navigate(typeof(Login), e.Arguments);
                 }
                 // Verifique se a janela atual está ativa
                 Window.Current.Activate();
