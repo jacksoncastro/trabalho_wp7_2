@@ -32,8 +32,7 @@
         </SplitView.Pane>
         <SplitView.Content>
             <Grid>
-                <TextBlock Text="SplitView Basic" FontSize="54" Foreground="White"
-                           HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Name="wellcome"></TextBlock>
             </Grid>
         </SplitView.Content>
     </SplitView>
