@@ -12,12 +12,15 @@
             <StackPanel HorizontalAlignment="Center">
                 <TextBlock Text="Lista de usuários" FontSize="18" FontWeight="Bold" Margin="0, 40"></TextBlock>
             </StackPanel>
+            <StackPanel HorizontalAlignment="Center">
+                <TextBlock Text="* Clique em um usuário para escultar seu nome" Margin="0,0,0,20" Foreground="red" FontSize="12"></TextBlock>
+            </StackPanel>
             <StackPanel>
                 <ListView x:Name="usersListView" ItemsSource="{x:Bind Users}" IsItemClickEnabled="True" ItemClick="usersListView_ItemClick">
                     <ListView.ItemTemplate>
                         <DataTemplate x:DataType="local:User" >
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="{Binding Name}"></TextBlock>
+                                <TextBlock Text="{Binding Detail}"></TextBlock>
                             </StackPanel>
                         </DataTemplate>
                     </ListView.ItemTemplate>

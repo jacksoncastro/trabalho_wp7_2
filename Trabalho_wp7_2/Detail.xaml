@@ -13,12 +13,16 @@
                 <TextBlock Text="Detalhes do usuário" FontSize="18" FontWeight="Bold" Margin="0, 40"></TextBlock>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="20">
-                <TextBlock Text="Nome:" Width="50"/>
+                <TextBlock Text="Matricula:" Width="75" FontWeight="Bold"/>
+                <TextBlock Name="id" Width="270"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="20">
+                <TextBlock Text="Nome:" Width="75" FontWeight="Bold"/>
                 <TextBlock Name="name" Width="270"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="20">
-                <TextBlock Text="Login:" Width="50"/>
+                <TextBlock Text="Login:" Width="75" FontWeight="Bold"/>
                 <TextBlock Name="login" Width="270"/>
             </StackPanel>
         </StackPanel>

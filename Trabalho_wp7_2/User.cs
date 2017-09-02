@@ -16,6 +16,12 @@ namespace Trabalho_wp7_2
 
         public string Password { get; set; }
 
+        public string Detail {
+            get {
+                return Id + " - " + Name;
+            }
+        }
+
         public User() {}
 
         public User(int Id, string Name, string Login, string Password) {

@@ -28,6 +28,7 @@ namespace Trabalho_wp7_2
 
             if (LoginManager.currentUser != null)
             {
+                id.Text = LoginManager.currentUser.Id.ToString();
                 name.Text = LoginManager.currentUser.Name;
                 login.Text = LoginManager.currentUser.Login;
             }
